@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>com.redhat.guide-maven-with-parent</groupId>
+  <artifactId>my-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+ 
+  <name>My Parent</name>
+  <url>https://maven.apache.org</url>
+ 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>3.8.1</junit.version>
+  </properties>
+ 
+  <dependencies>   
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <name>Maven Releases Repository</name>
+            <url>https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <name>Maven Snapshots Repository</name>
+            <url>https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
