@@ -6,12 +6,12 @@
 		<server>
 			<id>maven-releases</id>
 			<username>admin</username>
-			<password>admin123</password>
+			<password></password>
 		</server>
 		<server>
 			<id>maven-snapshots</id>
 			<username>admin</username>
-			<password>admin123</password>
+			<password></password>
 		</server>
 	</servers>
 
@@ -35,7 +35,7 @@
 					<id>maven-releases</id>
 					<name>Maven Releases Repository</name>
 					<url>
-						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-releases/  
+						https://nexus-cicd-tools.ocp.ibge.gov.br/repository/maven-releases/  
 					</url>
 					<releases>
 						<enabled>true</enabled>
@@ -48,7 +48,7 @@
 					<id>maven-snapshots</id>
 					<name>Maven Snapshots Repository</name>
 					<url>
-						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-snapshots/  
+						https://nexus-cicd-tools.ocp.ibge.gov.br/repository/maven-snapshots/  
 					</url>
 					<releases>
 						<enabled>false</enabled>
@@ -61,7 +61,7 @@
 					<id>maven-central</id>
 					<name>Maven Central Repository</name>
 					<url>
-						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-central/  
+						https://nexus-cicd-tools.ocp.ibge.gov.br/repository/maven-central/  
 					</url>
 					<releases>
 						<enabled>true</enabled>
@@ -74,7 +74,7 @@
 					<id>maven-legacy</id>
 					<name>Maven Legacy Repository</name>
 					<url>
-						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-legacy/  
+						https://nexus-cicd-tools.ocp.ibge.gov.br/repository/maven-legacy/  
 					</url>
 					<releases>
 						<enabled>true</enabled>
@@ -87,7 +87,7 @@
 					<id>maven-third-party</id>
 					<name>Maven Third Party Repository</name>
 					<url>
-						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-third-party/  
+						https://nexus-cicd-tools.ocp.ibge.gov.br/repository/maven-third-party/  
 					</url>
 					<releases>
 						<enabled>true</enabled>
@@ -100,7 +100,7 @@
 					<id>spring-releases</id>
 					<name>Maven Spring Releases Repository</name>
 					<url>
-						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/spring-releases/  
+						https://nexus-cicd-tools.ocp.ibge.gov.br/repository/spring-releases/  
 					</url>
 					<releases>
 						<enabled>true</enabled>
@@ -118,7 +118,7 @@
 					<id>maven-central</id>
 					<name>Maven Central Repository</name>
 					<url>
-						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-central/  
+						https://nexus-cicd-tools.ocp.ibge.gov.br/repository/maven-central/  
 					</url>
 					<releases>
 						<enabled>true</enabled>
