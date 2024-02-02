@@ -24,16 +24,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>Maven Releases Repository</name>
-            <url>https://nexustestroute01-nexus-test.apps.ocp4.ibge.gov.br/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>Maven Snapshots Repository</name>
-            <url>https://nexustestroute01-nexus-test.apps.ocp4.ibge.gov.br/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+  <distributionManagement>
+      <repository>
+          <id>maven-releases</id>
+          <name>Maven Releases Repository</name>
+          <url>https://nexustestroute01-nexus-test.apps.ocp4.ibge.gov.br/repository/maven-releases/</url>
+      </repository>
+      <snapshotRepository>
+          <id>maven-snapshots</id>
+          <name>Maven Snapshots Repository</name>
+          <url>https://nexustestroute01-nexus-test.apps.ocp4.ibge.gov.br/repository/maven-snapshots/</url>
+      </snapshotRepository>
+  </distributionManagement>
 </project>
