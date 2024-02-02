@@ -1,0 +1,137 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"  
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0   http://maven.apache.org/xsd/settings-1.0.0.xsd">  
+
+	<servers>
+		<server>
+			<id>maven-releases</id>
+			<username>admin</username>
+			<password>admin123</password>
+		</server>
+		<server>
+			<id>maven-snapshots</id>
+			<username>admin</username>
+			<password>admin123</password>
+		</server>
+	</servers>
+
+	<profiles>
+		<profile>
+			<id>sonar</id>
+			<properties>
+				<sonar.host.url>https://sonarqube-sonarqube.apps.cluster-8979d.8979d.sandbox2920.opentlc.com</sonar.host.url>
+			</properties>
+		</profile>
+		<profile>
+			<id>nexus</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<!-- ****************************** -->
+			<!-- Repositories for jar artifacts -->
+			<!-- ****************************** -->
+			<repositories>
+				<repository>
+					<id>maven-releases</id>
+					<name>Maven Releases Repository</name>
+					<url>
+						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-releases/  
+					</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>maven-snapshots</id>
+					<name>Maven Snapshots Repository</name>
+					<url>
+						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-snapshots/  
+					</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>maven-central</id>
+					<name>Maven Central Repository</name>
+					<url>
+						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-central/  
+					</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>maven-legacy</id>
+					<name>Maven Legacy Repository</name>
+					<url>
+						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-legacy/  
+					</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>maven-third-party</id>
+					<name>Maven Third Party Repository</name>
+					<url>
+						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-third-party/  
+					</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>spring-releases</id>
+					<name>Maven Spring Releases Repository</name>
+					<url>
+						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/spring-releases/  
+					</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+			<!-- ****************************** -->
+			<!-- Repositories for maven plugins -->
+			<!-- ****************************** -->
+			<pluginRepositories>
+				<pluginRepository>
+					<id>maven-central</id>
+					<name>Maven Central Repository</name>
+					<url>
+						https://nexus-nexus.apps.cluster-8979d.8979d.sandbox2920.opentlc.com/repository/maven-central/  
+					</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>sonar</activeProfile>
+		<activeProfile>nexus</activeProfile>
+	</activeProfiles>
+</settings>
