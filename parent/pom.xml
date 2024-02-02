@@ -28,12 +28,12 @@
         <repository>
             <id>maven-releases</id>
             <name>Maven Releases Repository</name>
-            <url>https://nexus-cicd-tools.ocp.ibge.gov.br/repository/maven-releases/</url>
+            <url>https://nexustestroute01-nexus-test.apps.ocp4.ibge.gov.br/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>maven-snapshots</id>
             <name>Maven Snapshots Repository</name>
-            <url>https://nexus-cicd-tools.ocp.ibge.gov.br/repository/maven-snapshots/</url>
+            <url>https://nexustestroute01-nexus-test.apps.ocp4.ibge.gov.br/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
